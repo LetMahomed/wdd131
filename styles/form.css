@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 500px;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: #ffcad4;
+}
+
+main{
+    background-color: #fff0f3;
+    padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 1rem;
+}
+
+h1{
+    background-color: #f4acb7;
+    color: black;
+}
+
+.frm-one-column{
+    display:grid;
+}
+
+.frm-one-column label{
+    width: 100%;
+    text-align: left;
+}
+
+.legend-header{
+    text-align: left;
+}
+
+.require-field::before{
+    content: "* ";
+}
+
+input[type="date"], 
+input[type="text"],
+select,
+textarea{
+    width: 100%;
+    padding: .8rem .6rem;
+    margin: 0 0 1rem 0;
+    border-radius: 5px;
+}
+
+input[type="date"]:valid, 
+input[type="text"]:valid,
+select:valid,
+textarea:valid{
+    background-color: none;
+}
+
+input[type="date"]:invalid, 
+input[type="text"]:invalid,
+select:invalid,
+textarea:invalid{
+    background-color: white)
+}
+
+fieldset{
+    border:none;
+}
+
+.star-ratings{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 0 0 1rem 0;
+    position: relative;
+}
+
+.star-ratings input{
+    display:none;
+}
+
+.star-ratings > label{
+    width:30px;
+    height: 30px;
+    color: #fb6f92;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0,0,0,0);/*remove blinking cursor*/
+}
+
+.star-ratings > label:hover{
+    color: white;
+}
+
+.star-ratings label:active::before{
+    transform:scale(1.1);
+}
+
+.star-ratings > label::before{
+    content: "\2606";
+    position: absolute;
+    top:0px;
+    line-height: 30px;
+}
+
+.star-ratings input:checked ~ label:before{
+    content:"\2605";
+}
+
+#features{
+    display: grid;
+    gap: .5rem 0;
+    padding: .5rem 0;
+    margin: 0 0 1rem 0;
+}
+
+button[type="submit"]{
+    padding: .5rem .5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover{
+    background-color: #fb6f92;
+    color: white;
+}
+
+footer{
+    background-color: #ffb3c6;
+    color: black;
+    padding: 1rem;
+}
