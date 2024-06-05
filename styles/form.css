@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +7,7 @@
 }
 
 body{
-    font-family: var(--paragraph-font);
+    font-family: 'Raleway', sans-serif; /* Directly using the font-family */
     max-width: 500px;
     padding: 1rem;
     margin: 0 auto;
@@ -30,7 +29,7 @@ h1{
 }
 
 .frm-one-column{
-    display:grid;
+    display: grid;
 }
 
 .frm-one-column label{
@@ -54,24 +53,25 @@ textarea{
     padding: .8rem .6rem;
     margin: 0 0 1rem 0;
     border-radius: 5px;
+    border: 1px solid #ccc; /* Added border for better visibility */
 }
 
 input[type="date"]:valid, 
 input[type="text"]:valid,
 select:valid,
 textarea:valid{
-    background-color: none;
+    background-color: none; /* This property does not exist, so it should be removed or set to a valid color */
 }
 
 input[type="date"]:invalid, 
 input[type="text"]:invalid,
 select:invalid,
 textarea:invalid{
-    background-color: white)
+    background-color: white; /* Fixed the syntax error */
 }
 
 fieldset{
-    border:none;
+    border: none;
 }
 
 .star-ratings{
@@ -85,17 +85,17 @@ fieldset{
 }
 
 .star-ratings input{
-    display:none;
+    display: none;
 }
 
 .star-ratings > label{
-    width:30px;
+    width: 30px;
     height: 30px;
     color: #fb6f92;
     font-size: 2rem;
     display: flex;
     align-items: center;
-    caret-color: rgba(0,0,0,0);/*remove blinking cursor*/
+    caret-color: rgba(0,0,0,0); /* remove blinking cursor */
 }
 
 .star-ratings > label:hover{
@@ -103,18 +103,18 @@ fieldset{
 }
 
 .star-ratings label:active::before{
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
 
 .star-ratings > label::before{
     content: "\2606";
     position: absolute;
-    top:0px;
+    top: 0px;
     line-height: 30px;
 }
 
 .star-ratings input:checked ~ label:before{
-    content:"\2605";
+    content: "\2605";
 }
 
 #features{
@@ -128,6 +128,7 @@ button[type="submit"]{
     padding: .5rem .5rem;
     font-weight: bold;
     border-radius: 5px;
+    border: 1px solid #ccc; /* Added border for consistency */
 }
 
 button[type="submit"]:hover{
