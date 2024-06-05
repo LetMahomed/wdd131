@@ -3,14 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="author" content="Leticia Mahoemd">
+    <meta name="author" content="Leticia Mahomed">
     <meta name="description" content="WDD 131 Review form">
-
     <title>WDD 131 - Review Form</title>
-
     <link rel="stylesheet" type="text/css" href="styles/form.css">
-
     <script src="scripts/form.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
@@ -26,49 +22,41 @@
                     <option disabled selected value="">Select a product...</option>
                 </select>
             </label>
-            
-
             <fieldset class="star-ratings">
                 <legend class="legend-header require-field">Overall Rating:</legend>
-                <label><input type="radio" id="fivestar" name="stars" value="5" required></label>
-                <label><input type="radio" id="fourstar" name="stars" value="4" required></label>
-                <label><input type="radio" id="threestar" name="stars" value="3" required></label>
-                <label><input type="radio" id="twostar" name="stars" value="2" required></label>
-                <label><input type="radio" id="onestar" name="stars" value="1" required></label>
+                <label><input type="radio" id="fivestar" name="stars" value="5" required> 5 Stars</label>
+                <label><input type="radio" id="fourstar" name="stars" value="4" required> 4 Stars</label>
+                <label><input type="radio" id="threestar" name="stars" value="3" required> 3 Stars</label>
+                <label><input type="radio" id="twostar" name="stars" value="2" required> 2 Stars</label>
+                <label><input type="radio" id="onestar" name="stars" value="1" required> 1 Star</label>
             </fieldset>
-
             <label class="legend-header require-field" for="installation_date">Date of Installation:
                 <input type="date" id="installation_date" name="installation_date" required>
             </label>
-            
             <fieldset id="features">
                 <legend class="legend-header require-field">
                     Which features did you find useful in the product? 
                     <br> (Check all that apply)
                 </legend>
-                <label><input type="checkbox" id="design" name="design"> Design</label>
-                <label><input type="checkbox" id="durability" name="durability"> Durability</label>
-                <label><input type="checkbox" id="ease_use" name="ease_use"> Ease of Use</label>
-                <label><input type="checkbox" id="performance" name="performance"> Performance</label>
+                <label><input type="checkbox" id="design" name="features" value="design"> Design</label>
+                <label><input type="checkbox" id="durability" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" id="ease_use" name="features" value="ease_use"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features" value="performance"> Performance</label>
             </fieldset>
-              
-            <label class="legend-header">Written Review (Optional)<textarea id="review" name="review"></textarea></label>
-            
-
-            <label class="legend-header" for="user_name">Your name (Optional)<input type="text" id="user_name" name="user_name"></label>
-            
-
+            <label class="legend-header" for="review">Written Review (Optional):
+                <textarea id="review" name="review"></textarea>
+            </label>
+            <label class="legend-header" for="user_name">Your name (Optional):
+                <input type="text" id="user_name" name="user_name">
+            </label>
             <button type="submit">Submit</button>
-
         </form>
     </main>
     <footer>
         <p class="no-margin-para">
             ©️<span id="currentyear"></span> Leticia Mahomed Brazil
         </p>
-        <p  class="no-margin-para" id="lastModified">
-
-        </p>
+        <p class="no-margin-para" id="lastModified"></p>
     </footer>
 </body>
 </html>
