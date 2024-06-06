@@ -12,6 +12,7 @@ body {
 
 .content-wrapper {
     text-align: center;
+    
 }
 
 nav {
@@ -230,3 +231,9 @@ footer ul li a:hover {
         margin-bottom: 10px;
     }
 }
+.furry-friends-name {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
